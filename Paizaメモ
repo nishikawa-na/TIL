@@ -40,6 +40,10 @@ joinメゾット
   Arrayクラスで用意されているメソッド。
   配列の各要素を1つの文字列に結合する。join("-") joinメゾットの引数には何で結合するか　を与える。
 
+reverseメゾット
+　Arrayクラス　Stringクラスで用意されているメゾット。
+　配列の中身、文字列の中身を入れ替える(前後に)
+
 charsメゾット
 　Stringクラスで用意されているメゾット。
 　文字列の各文字を文字列の配列で返します。
@@ -50,7 +54,7 @@ charsメゾット
 
 puts print p メゾットの違い
  putsメゾット　出力後改行する。
- printメゾット　出力後改行しない。
+ printメゾット　出力後改行しない。 引数として与えられたオブジェクトを改行を含まない「形式」で出力します。←形式なので配列をprintすると、[3,1,2]と出力される。
  pメゾット　出力後改行する。　オブジェクトを見やすいように出力する　""や [] も含めて出力する。
 
 計算
@@ -78,4 +82,22 @@ N.chars.each_with_index do |i, index|
   print ',' if index % 3 == 0 && index != 0
   print i
 end
-→数値を3桁事に,で区切る。　
+→数値を3桁事に,で区切る。　ただしこれは、入力される数値が3の倍数である時、そうで無いときは↓
+test_string = gets.chomp.reverse
+string_box = []
+test_string.chars.each_with_index do |i,index|
+    string_box << "," if index % 3 == 0 && index != 0
+    string_box << i
+end
+puts string_box.join.reverse　こんな感じ。
+③
+9 個の数値が半角スペース区切りで入力されます　3 * 3 の出力せよ。　数値の間に余白を入れる。
+numbers = gets.split.map(&:to_i)
+(0..8).each do |i|　　#配列のindexにて繰り返し処理
+ if i % 3 == 2
+  puts numbers[i]
+ else 
+  print numbers[i]
+  print " "
+ end
+end
