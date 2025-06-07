@@ -43,7 +43,7 @@ joinメゾット
 slice!メゾット
 　Arrayクラスで用意されているメソッド。
 　配列から指定した要素を取り出すことができるメソッド。
-　slice ! の！がついている場合は、要素を取り出すだけでなく削除する。
+　slice ! の！がついている場合は、要素を取り出すだけでなく削除する。 配列.sline!(インデックス番号指定)と書く。
 
 reverseメゾット
 　Arrayクラス　Stringクラスで用意されているメゾット。
@@ -68,6 +68,11 @@ to_aメゾット
 
 sprintfフォーマット･･･これはフォーマット指定子を使って値を整形するためのメソッドで、数値や文字列を特定の形式で出力するために使う。
 　sprintf("%.3f", 10) #=> "10.000" 第一引数にフォーマットを指定し(今回は、小数点3桁まで)、第二引数では10と指定することで、10.000 と出力される。
+
+　sprintf( "%3d", 1000 ) →　これは数値を3桁ごとに半角スペースを入れる書き方。
+　dは、整数（decimal）の事であり、i 整数(Integer)にすると8進数として使用されるためdを使用する。
+
+  sprintf( "%03d", N ) →これは、数値を 3 けたになるよう数値の前に 0 を埋めて出力するやりかた。
 　詳細は　リファレンスマニュアルを確認(https://docs.ruby-lang.org/ja/latest/doc/print_format.html)
 
 puts print p メゾットの違い
@@ -151,3 +156,20 @@ N = numbers[0].to_f
 M = numbers[1].to_i
 puts sprintf("%.#{M}f", N)
 
+⑦自然数 Q が与えられます。Q 回以下の問題に答えてください。
+実数 N、自然数 M が入力されます。N を丸めて小数第 M 位まで出力してください。また、N の小数部が小数第 M 位に満たない場合は 0 で埋めて出力してください。
+Q = gets.to_i
+Q.times do
+    numbers = gets.split
+    N = numbers[0].to_f
+    M = numbers[1].to_i
+    n = N.round(M)
+    puts sprintf( "%.#{M}f", n )
+end　こう書いた。　そうすると正常に動くが、Warning: already initialized constant Nというエラーが出る。繰り返し処理の内部へ変数を定義しているから。
+なのでこう書いた。↓
+Q = gets.to_i
+Q.times do
+    numbers = gets.split
+    n = numbers[0].to_f.round(numbers[1].to_i)　#roundメゾットで四捨五入
+    puts sprintf( "%.#{numbers[1].to_i}f", n )　#sprintfフォーマットにて小数点numbers[1]とした。
+end
