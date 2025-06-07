@@ -49,6 +49,10 @@ reverseメゾット
 　Arrayクラス　Stringクラスで用意されているメゾット。
 　配列の中身、文字列の中身を入れ替える(前後に)
 
+lengthメゾット
+　Arrayクラス　Stringクラスどちらでも用意されているメゾット。
+　配列の要素数、文字数をカウントします。！
+
 charsメゾット
 　Stringクラスで用意されているメゾット。
 　文字列の各文字を文字列の配列で返します。
@@ -173,3 +177,35 @@ Q.times do
     n = numbers[0].to_f.round(numbers[1].to_i)　#roundメゾットで四捨五入
     puts sprintf( "%.#{numbers[1].to_i}f", n )　#sprintfフォーマットにて小数点numbers[1]とした。
 end
+⑧自然数 H, W, A, B が与えられます。縦に H 行、横に W 行で計 H * W 個の (A, B) という形式の文字列を出力してください。
+ただし、横は | (半角スペース バーティカルライン 半角スペース) 区切りで、縦は = で区切って出力してください。
+また、縦の文字列間で = を出力する際は、その上の行と文字数が等しくなるように出力します。
+numbers = gets.split.map(&:to_i)
+H = numbers[0]
+W = numbers[1]
+A = numbers[2]
+B = numbers[3]
+
+test_array = []
+
+W.times do
+ test_array << "(#{A}, #{B})"
+end
+H.times do |h|
+ puts test_array.join(" | ")
+  if h != H - 1
+   puts "=" * test_array.join(" | ").length
+  end
+end　が正しい
+自分がミスした点が二つあり一つ目が、test_arrayの配列に代入する方法。
+最初はこう書いた。　
+test_array = [] 
+test_array　<< "(#{A}, #{B})" * W
+これだと、"(#{A}, #{B})"をW回数だけ繰り返すが繰り返した分test_arrayに代入されるわけではない。
+二つめが、＝を出力する方法
+H.times do |h| 
+　puts test_array.join(" | ") 
+　if h != H 
+　puts "=" *　test_array.join(" | ").length
+と書いた。ここでおかしいのが　h != H である。h は 0 から H-1 までの値を取るから、h が H になることはない
+
