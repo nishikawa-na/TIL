@@ -64,6 +64,7 @@ to_aメゾット
 浮動小数点数のクラス　Floatクラスという。
 　to_fメゾットを使うと、selfを返します。　3.14.to_f   # => 3.14
 　 gets.to_iだと　3.14を3と整数(Integer)となるが、　gets.to_fだと、3.14を3.14(Float)となる
+　→ちなみにto_fメゾットはStingクラス Integerクラスにて用意されているメゾット
 
 　roundメゾットは、引数で指定した数値の小数桁数を四捨五入する。　t = 3.141592653 で　t.round(3)   # => 3.142
 
@@ -208,4 +209,12 @@ H.times do |h|
 　if h != H 
 　puts "=" *　test_array.join(" | ").length
 と書いた。ここでおかしいのが　h != H である。h は 0 から H-1 までの値を取るから、h が H になることはない
-
+⑨
+1 行目で、整数 N と、続けて N 個の実数 a_1, ... , a_N が半角スペース区切りで与えられます。
+a_1, ... , a_N を改行区切りでそのまま出力してください
+自分は最初こう書いた↓
+numbers = gets.split
+N = numbers[0].to_i
+float_array = numbers[1..N].to_f
+puts float_array　これだとエラーとなる。 Arrayクラスにto_fメゾットなんてないよと。
+なので、　float_array = numbers[1..N].to_f　から　float_array = numbers[1..N].map{ |n| n.to_f }　へ変更した。
