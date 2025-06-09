@@ -31,6 +31,8 @@ splitメソッド
 mapメゾット
 　Arrayクラスで用意されるメゾット　配列の各要素に対して処理を行った結果を配列で返してくれるメソッドです。
   配列.map { |変数| 実行する処理 }
+　また、mapメゾットではwith_indexと付けることで各要素のインデックスを取得することが出来る。
+  配列.map.with_index { |n,index| 処理内容～}　といった感じ。 
 
 minメゾット
 　Arrayクラスで用意されているメゾット。配列内の最小値を求める。
@@ -67,6 +69,10 @@ to_aメゾット
 　→ちなみにto_fメゾットはStingクラス Integerクラスにて用意されているメゾット
 
 　roundメゾットは、引数で指定した数値の小数桁数を四捨五入する。　t = 3.141592653 で　t.round(3)   # => 3.142
+
+if文について
+　if 三項演算子について　条件式 ? 「真(true)」となった場合に実行したい処理 : 「偽(false)」となった場合に実行したい処理
+　if 修飾子　いわゆる後置if
 
 ％記法･･･文字列リテラルの一つ
 　%wを使うと、文字列を配列にできる。　%w( 1 2 3) とすると[1,2,3]といった感じ
@@ -218,3 +224,15 @@ N = numbers[0].to_i
 float_array = numbers[1..N].to_f
 puts float_array　これだとエラーとなる。 Arrayクラスにto_fメゾットなんてないよと。
 なので、　float_array = numbers[1..N].to_f　から　float_array = numbers[1..N].map{ |n| n.to_f }　へ変更した。
+⑩
+1 行目に整数 N が与えられます。
+2 行目以降に、N 組の文字列 s_i と整数 a_i が N 行で与えられます。(1 ≦ i ≦ N)
+N 組の s_i と a_i を改行区切りで出力してください。
+N = gets.to_i
+N.times do
+ mix_array = gets.split
+ test_array = mix_array.map.with_index{ |m,idx| idx == 1 ? m.to_i : m }
+ puts test_array.join(" ")
+end
+ここで、最初ミスしたのが、{}の処理で後置ifを使用した。その場合は、idxが1のものだけをtest_arrayに代入された。
+なので、if 三項演算子を採用した。
