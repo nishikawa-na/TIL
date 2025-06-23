@@ -37,6 +37,7 @@ mapメゾット
 minメゾット
 　Arrayクラスで用意されているメゾット。配列内の最小値を求める。
 　puts 配列.min とすると配列内の最小値が出力
+maxメゾットは逆ね。
 
 joinメゾット
   Arrayクラスで用意されているメソッド。
@@ -236,3 +237,14 @@ N.times do
 end
 ここで、最初ミスしたのが、{}の処理で後置ifを使用した。その場合は、idxが1のものだけをtest_arrayに代入された。
 なので、if 三項演算子を採用した。
+⑪
+要素数 N の数列 A と要素数 Q の数列 B が与えられます。 1 ≦ i ≦ Q の各 i について、i 行目に A の B_i 番目の値を出力してください。
+N = gets.to_i
+A = gets.split.map(&:to_i)
+Q = gets.to_i
+B = gets.split.map(&:to_i)
+
+B.each do |b|
+    puts A[b - 1]
+end　→めっちゃ考えたけど簡単だった。説明不要。
+
