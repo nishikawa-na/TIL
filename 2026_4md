@@ -5,4 +5,11 @@
 4/9 Reactキャッチアップ　再レンタリングについて　コンポネートのメモ化
 4/13 Reactキャッチアップ　再レンタリングについて　関数のメモ化・・・関数をPropsとして受け取る場合、関数自体が再生成されるからPropsが変わったと判断し、再レンタリング
 4/14 Reactキャッチアップ　再レンタリングについて　関数のメモ化useCallback 変数のメモ化useMemo
-4/19 Reactキャッチアップ　再レンタリングについて　グローバルなState管理　Contextの使い方・・・難しい。
+4/19 Reactキャッチアップ　再レンタリングについて　グローバルなState管理　Contextの使い方・・・難しい
+4/22 Reactキャッチアップ　再レンタリングについて　グローバルなState管理　Contextの使い方
+      1 React.createContetでContestの器を作成
+      2 作成したContextのProviderでグローバルStateを扱いたいコンポネートを囲む
+      3 Stateを参照したいコンポネートでReact.useContestを使う
+      実際のコードだと混乱しやすい↑
+      注意点
+      一つのContextオブジェクトの値が更新されたときは、useContextでそのContextを参照しているコンポネートは再レンタリングされる。
