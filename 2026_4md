@@ -13,3 +13,4 @@
       実際のコードだと混乱しやすい↑
       注意点
       一つのContextオブジェクトの値が更新されたときは、useContextでそのContextを参照しているコンポネートは再レンタリングされる。
+4/27 TypeScriptキャッチアップ　TypeScriptとは、型定義方法
