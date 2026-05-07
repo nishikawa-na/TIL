@@ -1,5 +1,5 @@
 5/3 AIについて　ハーネスエンジニアリング
 5/4 AIについて　claude code ハーネスエンジニアリング 各拡張機能とコンテキスト消費タイミング
 5/5 AIについて　claude code ハーネスエンジニアリング Claude.mdの運用方法
-5/5 AIについて　claude code ハーネスエンジニアリング Skills　リファレンス型とアクション型　disable-model-invocation･･･trueにするとClaudeが自動でSkillを呼び出さない。
-5/5 AIについて　claude code ハーネスエンジニアリング Subagentとは　特徴/用途/descriptionについて/ツールアクセスの重要性など。
+5/6 AIについて　claude code ハーネスエンジニアリング Skills　リファレンス型とアクション型　disable-model-invocation･･･trueにするとClaudeが自動でSkillを呼び出さない。
+5/7 AIについて　claude code ハーネスエンジニアリング Subagentとは　特徴/用途/descriptionについて/ツールアクセスの重要性など。
