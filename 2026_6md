@@ -6,3 +6,4 @@
 6/24 RailsAPIキャッチアップ･・・ローカル環境汚したくないのでDockerにて試し。久々にすると手こずるのでClaudecodeを使うとすんなり時代を感じる
 6/25 RailsAPIキャッチアップ・・・Json型での渡しを成功。renderに:jsonオプションを指定して渡すと、自動的にグループをJSONとしてレンダリングします。
 6/27 claudecodeでやる前にもう少しReactキャッチアップ･･･Reactディレクトリ設計とデザインパターン
+6/28 TypeScriptキャッチアップ
