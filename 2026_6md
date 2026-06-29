@@ -7,3 +7,5 @@
 6/25 RailsAPIキャッチアップ・・・Json型での渡しを成功。renderに:jsonオプションを指定して渡すと、自動的にグループをJSONとしてレンダリングします。
 6/27 claudecodeでやる前にもう少しReactキャッチアップ･･･Reactディレクトリ設計とデザインパターン
 6/28 TypeScriptキャッチアップ
+6/29 React Vite環境作成　node.jsの役割再確認･･･トランスコンパイラ（Babel）を動かすための環境としてのNode.jsです。実行環境
+　　　　　　Vite（ローカルだとesbuildにて変換　本番環境はRollup）
