@@ -16,6 +16,11 @@ Paizaメモ
 
 getsメソッド
 　ユーザーがキーボードで入力した値を文字列として取得するメソッド
+  使い方
+　　gets.chomp
+    gets.to_i
+    gets.chomp.split(" ")
+    gets.chomp.split(" ").map(&:to_i)
 
 timesメゾット
 　Integerクラスにあるメゾット
@@ -37,7 +42,7 @@ readlinesメゾット
 　readlinesメゾットは、すべての行を読み取り、１行ごとの配列に格納します。readlinesメゾットは、改行文字（\n）を含む。
 　["10\n", "12\n", "4\n", "8\n", "46\n"]　←こんな感じでね。
 　なので、　readlines.map(&:chomp) とすると配列の中身は文字列となり、改行文字が消えてOK
-           →数値として受け取りたいなら、readlines.map{ |n| n.chomp.to_i}とchompとto_iを行える。
+           →数値として受け取りたいなら、readlines.map(&:to_i)
 　
 to_iメソッド
 　数字の文字列を数値オブジェクトに変換するメソッドです。
@@ -105,6 +110,10 @@ joinメゾット
 all?メゾット
 　Arrayクラスで用意されているメソッド。
 　すべての要素が真である場合に true を返します。
+
+each_sliceメソッド
+nums.each_slice(3) do |row| ... end
+each_slice(3) は、配列を3個ずつのグループに分けて、そのグループを1つずつ row に渡してブロック(do ... end の中身)を実行します。
 
 slice!メゾット
 　Arrayクラスで用意されているメソッド。
