@@ -31,6 +31,8 @@ timesメゾット
 　　　 ～
      end と通常は処理内容を書く。
 　　 しかし3.times で切ると変わるらしい。
+  5.times {|n| print n }            # 01234 と表示される。 nに入る値は0～になるから注意しよう
+ 
 　　arr = %w(hoge huga piyo foo baa)
 　　a = arr.each
 　　pp a   #=> #<Enumerator: ...>　となる
