@@ -1,6 +1,7 @@
 Paizaメモ
 最終確認　FizzBuzz,九九作成
 https://paiza.jp/works/mondai/stdout_primer/stdout_primer__specific_format_step3
+https://paiza.jp/works/mondai/data_structure/data_structure__dict_step2
 
 7/16
  四則計算
@@ -135,7 +136,7 @@ each_sliceメゾット
 
 sortメゾット
 　Arrayクラスで用意されているメソッド。
-　配列内の順番を昇降へ入れ替え、配列を返す。
+　配列内の順番を昇降へ入れ替え、配列を返す。　文字列の配列にすると辞書順になるよ
 　→reverseメゾットも利用すると　配列.sort ここで昇降　配列.sort.reverse 降順となる
 
 indluce?メゾット
