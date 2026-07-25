@@ -15,6 +15,8 @@ https://paiza.jp/works/mondai/stdout_primer/stdout_primer__specific_format_step3
 　puts "#{numbers[0] - numbers[1]} #{numbers[0] * numbers[1]}"
 　理由　#{} の中は完全にRubyのコードとして扱われる。なのでNG書方の場合は文字列のなかにーという記号があるだけとなる。
 
+インデックス番号について
+　配列にも文字列にも使える。
 
 getsメソッド
 　ユーザーがキーボードで入力した値を文字列として取得するメソッド
