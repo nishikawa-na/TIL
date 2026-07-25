@@ -137,8 +137,8 @@ sortメゾット
 　→reverseメゾットも利用すると　配列.sort ここで昇降　配列.sort.reverse 降順となる
 
 indluce?メゾット
-Arrayクラスで用意されているメソッド。
-配列内に指定した値があるかtrue　or falseで返すメゾット
+Arrayクラス,Stringクラスで用意されているメソッド。
+配列内に、文字列内に指定した値があるかtrue　or falseで返すメゾット
 a = [ "a", "b", "c" ]
 a.include?("b")       #=> true
 a.include?("z")       #=> false
