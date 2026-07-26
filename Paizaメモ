@@ -26,10 +26,13 @@ tallyメソッド　Enumerable（イニューマラブルと読む）で使え�
 # => {"apple"=>2, "banana"=>1}
 
 Hashの繰り返し処理は
-　each_key　|key|
-  each_value |value|
-  each do  |key,value|
-　でいけるよ
+　each_key{|key|
+  }
+  each_value{|value|
+  }
+  each{|key,value|
+   }
+　でいけるよ 通常の繰り返し処理と記述方法が異なるので注意。
 
 getsメソッド
 　ユーザーがキーボードで入力した値を文字列として取得するメソッド
