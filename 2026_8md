@@ -4,4 +4,5 @@
 8/6 React TypeScriptアウトプットアプリ作成　投稿詳細ページに関する情報取得し表示するコンポネート　CSSファイル作成
 8/8 React TypeScriptアウトプットアプリ作成　投稿詳細ページ作成完了
 8/11 React TypeScriptアウトプットアプリ作成　投稿作成ページ作成に伴うコンポネート作成
-8/11 React TypeScriptアウトプットアプリ作成　投稿作成ページ作成に伴う　フォームに入力する値の型制限　Route作成　Form表示用コンポネート作成
+8/17 React TypeScriptアウトプットアプリ作成　投稿作成ページ作成に伴う　フォームに入力する値の型制限　Route作成　Form表示用コンポネート作成
+8/19 React TypeScriptアウトプットアプリ作成　投稿作成ページ作成に伴う　Form表示用コンポネート作成中　ReactのイベントReact.ChangeEventとブラウザオブジェクト型であるHTMLInputElement  HTMLTextAreaElement  HTMLSelectElement　について
