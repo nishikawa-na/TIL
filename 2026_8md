@@ -8,3 +8,4 @@
 8/19 React TypeScriptアウトプットアプリ作成　投稿作成ページ作成に伴う　Form表示用コンポネート作成中　ReactのイベントReact.ChangeEventとブラウザオブジェクト型であるHTMLInputElement  HTMLTextAreaElement  HTMLSelectElement　について
 8/20 React TypeScriptアウトプットアプリ作成　投稿作成ページ作成に伴う　Form表示用コンポネート作成中 よく分からない　 <form onSubmit={onSubmit} className={styles.form}>みたいにonSubmitがどこから来るのか
 　共通コンポーネントと専用コンポーネント？　明日もっと見てみる多分Reactの基礎に当たる考えぽい？
+8/22 はてなブックマークにあった　0から分かるClaude Code完全ガイドZenn記事確認→ハーネス作成中。
