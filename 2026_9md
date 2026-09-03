@@ -1,1 +1,3 @@
 9/2  React TypeScriptアウトプットアプリ作成　投稿作成ページ作成に伴う　フォームの状態管理や送信処理を担当するコンポーネント作済
+9/3 Claude Code Subagentについて　調べるとコードテストをしているSubagentが多かったがそれならHooksを使うべきな・・・？　明日も調べてみる
+https://qiita.com/tsubasa_k0814/items/cda869c280aae4d28a5e　←明日見る
