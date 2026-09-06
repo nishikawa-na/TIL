@@ -1,3 +1,4 @@
 9/2  React TypeScriptアウトプットアプリ作成　投稿作成ページ作成に伴う　フォームの状態管理や送信処理を担当するコンポーネント作済
 9/3 Claude Code Subagentについて　調べるとコードテストをしているSubagentが多かったがそれならHooksを使うべきな
 9/5 Subagent作成試運転実施　Cluade公式サイトも調べてみたらテストをSubagentしている。コンテキスト防止　後3ページ後にHooksが出るのでそのときまた確認してみる
+9/6 Hooks作成実施　実際にCLAUDE.mdを生かして実装すると、AskUserQuestionがとてもいい。　作業終了後にデスクトップへ通知するようにした
